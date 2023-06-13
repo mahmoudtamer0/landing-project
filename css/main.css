@@ -68,8 +68,8 @@ ul {
 /* end wave section*/
 /* start header */
 header {
-    /* padding-top: 40px;
-    padding-bottom: 40px; */
+    /* padding-top: 40px;*/
+    padding-bottom: 40px;
     position: relative;
     background-color: var(--whiteblue);
 }
@@ -86,6 +86,20 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width:767px) {
+    .header-secs {
+        display: block;
+    }
+
+    header .head-logo {
+        margin: 0 auto;
+    }
+
+    header li {
+        text-align: center;
+    }
 }
 
 header ul {
@@ -139,8 +153,7 @@ header ul a.active {
 .landing h1 {
     color: var(--blackblue);
     font-weight: bold;
-    width: 400px;
-    font-size: 44px;
+    font-size: 3.1rem;
 }
 
 .landing p {
@@ -175,5 +188,77 @@ header ul a.active {
     color: #fff;
 }
 
+@media (max-width:767px) {
+    .landing-text {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .landing-text-buttons {
+        justify-content: center;
+    }
+
+    .landing p {
+        width: 335px;
+    }
+}
 
 /* end landing */
+/* start services */
+.services {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.services .main-title {
+    text-align: center;
+}
+
+.services .main-title h2 {
+    color: var(--blackblue);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.services .services-secs {
+    padding-top: 40px;
+    gap: 35px;
+}
+
+.services-box {
+    transition: 0.4s;
+    display: flex;
+    gap: 30px;
+    border: 1px solid #ccc;
+    padding: 20px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.services-box i {
+    background-color: var(--blackblue);
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 20px;
+    color: var(--whiteblue);
+}
+
+.services-box p {
+    line-height: 2;
+}
+
+.services-box h3 {
+    font-weight: bold;
+    color: var(--blackblue);
+}
+
+.services-box.active {
+    background: linear-gradient(0.9turn, #3f87a6, var(--whiteblue));
+}
+
+.services-box:hover {
+    background: linear-gradient(0.9turn, #3f87a6, var(--whiteblue));
+}
+
+/* end services */
