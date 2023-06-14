@@ -228,7 +228,7 @@ header ul a.active {
 
 .services-box {
     transition: 0.3s;
-    background-color: white;
+    background-color: #ffffffbf;
     display: flex;
     gap: 30px;
     border: 1px solid #ccc;
@@ -332,6 +332,7 @@ header ul a.active {
     font-size: 20px;
     color: var(--whiteblue);
     height: fit-content;
+    width: fit-content;
 }
 
 .choose-text-sec {
@@ -347,4 +348,215 @@ header ul a.active {
     color: var(--blackblue);
 }
 
+@media (max-width:767px) {
+
+    .choose-secs {
+        gap: 70px;
+    }
+
+    /* .choose-text h2 {
+        margin: 0 auto;
+    } */
+
+    .choose-text i {
+        margin: 0 auto;
+    }
+
+    .choose-text-sec {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .choose-text-par {
+        text-align: center;
+    }
+
+    .choose-text-par p {
+        margin: 0 auto;
+    }
+}
+
 /* end choose */
+/* start other */
+.other {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+    background-color: aliceblue;
+    z-index: -10;
+}
+
+.other-secs {
+    gap: 140px;
+}
+
+.other-box {
+    z-index: 200;
+    border-radius: 0% 100% 0% 100% / 79% 32% 68% 21%;
+    background: linear-gradient(0.9turn, #3f87a6, var(--whiteblue));
+}
+
+.other-box h2 {
+    font-size: 3rem;
+    width: 2rem;
+    font-weight: bold;
+    color: var(--blackblue);
+}
+
+.other-box p {
+    width: 21rem;
+    line-height: 2;
+}
+
+.other-box-cards {
+    display: flex;
+}
+
+.other-box-1 {
+    background: linear-gradient(0.9turn, #3f87a6, var(--whiteblue));
+    z-index: 1;
+    scale: 1.1;
+    box-shadow: 0px 0px 21px -7px;
+}
+
+.other-box-1 i {
+    background-color: white;
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 20px;
+    color: var(--whiteblue);
+    height: fit-content;
+    width: fit-content;
+}
+
+.other-box-2 {
+    background-color: white;
+    position: relative;
+    left: -20px;
+    z-index: 0;
+}
+
+.other-box-cards i {
+    margin: 30px 0;
+}
+
+.other-box-2 i {
+    background-color: var(--blackblue);
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 20px;
+    color: var(--whiteblue);
+    height: fit-content;
+    width: fit-content;
+}
+
+.other-box-cards div {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.other-box-cards button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 30px 0 10px;
+}
+
+.other-box-1 button {
+    background-color: white;
+}
+
+.other-box-2 button {
+    background-color: var(--blackblue);
+    color: #fff;
+}
+
+.fancy-border-other {
+    z-index: 100;
+    left: 0;
+    border-radius: 0% 100% 0% 100% / 79% 32% 68% 21%;
+    width: 548px;
+    height: 397px;
+    background: linear-gradient(0.9turn, #3f87a6, var(--whiteblue));
+    position: absolute;
+    top: 24%;
+}
+
+.fancy-border-other-cards {
+    width: 200px;
+    height: 200px;
+    background: var(--whiteblue);
+    border-radius: 50% !important;
+    position: absolute;
+    right: 4%;
+    top: 38%;
+    z-index: -1;
+}
+
+@media(max-width:998px) {
+    .fancy-fancy {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .other-secs {
+        gap: 70px;
+    }
+
+    .other-box-cards {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .other-box-2 {
+        left: 0;
+    }
+
+    .other-box-1 {
+        scale: 1;
+        box-shadow: none;
+    }
+}
+
+/* end other */
+.other-container {
+    position: relative;
+    background: aliceblue;
+}
+
+.wave {
+    position: absolute;
+    height: 70px;
+    width: 98%;
+    background: aliceblue;
+    bottom: 0;
+}
+
+.wave::before,
+.wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+}
+
+.wave::before {
+    width: 55%;
+    height: 109%;
+    background-color: #fff;
+    right: -1.5%;
+    top: 60%;
+}
+
+.wave::after {
+    width: 55%;
+    height: 100%;
+    background-color: aliceblue;
+    left: -1.5%;
+    top: 40%;
+}
