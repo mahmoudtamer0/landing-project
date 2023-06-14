@@ -529,7 +529,7 @@ header ul a.active {
     background: aliceblue;
 }
 
-.wave {
+.other-container .wave {
     position: absolute;
     height: 70px;
     width: 98%;
@@ -537,15 +537,15 @@ header ul a.active {
     bottom: 0;
 }
 
-.wave::before,
-.wave::after {
+.other-container .wave::before,
+.other-container .wave::after {
     content: "";
     display: block;
     position: absolute;
     border-radius: 100% 50%;
 }
 
-.wave::before {
+.other-container .wave::before {
     width: 55%;
     height: 109%;
     background-color: #fff;
@@ -553,7 +553,7 @@ header ul a.active {
     top: 60%;
 }
 
-.wave::after {
+.other-container .wave::after {
     width: 55%;
     height: 100%;
     background-color: aliceblue;
