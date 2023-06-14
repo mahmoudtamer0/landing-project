@@ -227,7 +227,8 @@ header ul a.active {
 }
 
 .services-box {
-    transition: 0.4s;
+    transition: 0.3s;
+    background-color: white;
     display: flex;
     gap: 30px;
     border: 1px solid #ccc;
@@ -261,4 +262,89 @@ header ul a.active {
     background: linear-gradient(0.9turn, #3f87a6, var(--whiteblue));
 }
 
+.fancy-border {
+    width: 386px;
+    height: 397px;
+    background-color: var(--whiteblue);
+    position: absolute;
+    right: 2%;
+    top: 24%;
+    z-index: -4;
+    border-radius: 100% 0% 73% 27% / 43% 32% 68% 57%;
+}
+
+@media (max-width:767px) {
+    .fancy-border {
+        display: none;
+    }
+}
+
 /* end services */
+/* start choose */
+.choose {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.choose-imges {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.choose-imges .choos-imges-box {
+    text-align: center;
+}
+
+.choose-imges img {
+    border-radius: 50%;
+}
+
+.choose-img-large {
+    width: 200px;
+}
+
+.choose-img-small {
+    width: 100px;
+}
+
+.choose-img-xsmall {
+    width: 70px;
+}
+
+.choose-img-xlarge {
+    width: 250px;
+}
+
+.choose-text h2 {
+    padding-bottom: 25px;
+    width: 18rem;
+    font-size: 2.4rem;
+    color: var(--blackblue);
+    font-weight: bold;
+}
+
+.choose-text i {
+    background-color: var(--blackblue);
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 20px;
+    color: var(--whiteblue);
+    height: fit-content;
+}
+
+.choose-text-sec {
+    display: flex;
+    gap: 20px;
+}
+
+.choose-text-sec p {
+    width: 21rem;
+}
+
+.choose-text-sec h3 {
+    color: var(--blackblue);
+}
+
+/* end choose */
