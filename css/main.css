@@ -560,3 +560,51 @@ header ul a.active {
     left: -1.5%;
     top: 40%;
 }
+
+/* start reviews */
+.reviews {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    position: relative;
+}
+
+.reviews-main-title {
+    text-align: center;
+}
+
+.the-comment {
+    display: flex;
+    gap: 63px;
+    box-shadow: 0px 0px 60px -26px;
+    margin-top: 80px;
+    width: 85%;
+    margin: 80px auto 0;
+}
+
+.comment-img {
+    width: 50%;
+}
+
+.comment-img img {
+    padding: 14px;
+}
+
+.comment-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.comment-text i {
+    font-size: 29px;
+    color: #2ea1bb;
+}
+
+/* end reviews */
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
